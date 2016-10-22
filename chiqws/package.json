@@ -1,0 +1,14 @@
+{
+  "name": "chiqws",
+  "version": "0.0.0",
+  "description": "Web service de Chiquimula Tour App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Linsay Villela",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.14.0"
+  }
+}
