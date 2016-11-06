@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TourModelStoreContainer" CdmEntityContainer="TourEntities">
+    <EntitySetMapping Name="Imagen">
+      <EntityTypeMapping TypeName="TourModel.Imagen">
+        <MappingFragment StoreEntitySet="Imagen">
+          <ScalarProperty Name="sitioId" ColumnName="sitioId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sitio">
+      <EntityTypeMapping TypeName="TourModel.Sitio">
+        <MappingFragment StoreEntitySet="Sitio">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="imagenId" ColumnName="imagenId" />
+          <ScalarProperty Name="horario" ColumnName="horario" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="datos" ColumnName="datos" />
+          <ScalarProperty Name="masdatos" ColumnName="masdatos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Video">
+      <EntityTypeMapping TypeName="TourModel.Video">
+        <MappingFragment StoreEntitySet="Video">
+          <ScalarProperty Name="sitioId" ColumnName="sitioId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
