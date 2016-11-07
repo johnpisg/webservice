@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chiquimula.Data", "Chiquimu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chiquimula.WebApi", "Chiquimula.WebApi\Chiquimula.WebApi.csproj", "{6AFB2391-E230-43A8-93E0-CA3D4E283FD2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BD", "BD", "{2B811412-598A-489B-9762-9E62D3A858F8}"
+	ProjectSection(SolutionItems) = preProject
+		GenerateDB.sql = GenerateDB.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{1F1B0F1E-3401-4031-9FE4-7CB21F9856B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +34,10 @@ Global
 		{6AFB2391-E230-43A8-93E0-CA3D4E283FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AFB2391-E230-43A8-93E0-CA3D4E283FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AFB2391-E230-43A8-93E0-CA3D4E283FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F1B0F1E-3401-4031-9FE4-7CB21F9856B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1B0F1E-3401-4031-9FE4-7CB21F9856B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1B0F1E-3401-4031-9FE4-7CB21F9856B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1B0F1E-3401-4031-9FE4-7CB21F9856B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

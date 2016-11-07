@@ -82,5 +82,27 @@ namespace Chiquimula.WebSite
             RegisterScripts();
         }
 
+        void Application_AcquireRequestState(object sender, EventArgs e)
+        {
+            HttpContext context = base.Context;
+            if (context.Request.Url.AbsolutePath.Contains(".aspx"))
+            {
+                if (!context.Request.Url.AbsolutePath.Contains("Login"))
+                {
+                    var session = context.Session;
+                    try
+                    {
+                        if (session["Ux"] == null)
+                        {
+                            context.Response.Redirect("~/Login.aspx");
+                        }
+                    }
+                    catch
+                    {
+                        context.Response.Redirect("~/Login.aspx");
+                    }
+                }
+            }
+        }
     }
 }

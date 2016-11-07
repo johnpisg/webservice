@@ -28,5 +28,6 @@ namespace Chiquimula.Data
         public DbSet<Imagen> Imagen { get; set; }
         public DbSet<Sitio> Sitio { get; set; }
         public DbSet<Video> Video { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }

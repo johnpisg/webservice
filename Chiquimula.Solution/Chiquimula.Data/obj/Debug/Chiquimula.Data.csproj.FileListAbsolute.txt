@@ -6,3 +6,11 @@ D:\ChiquimulaWebSite\Chiquimula.WebSite\Chiquimula.Data\bin\Debug\EntityFramewor
 D:\ChiquimulaWebSite\Chiquimula.WebSite\Chiquimula.Data\obj\Debug\Chiquimula.Data.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\Chiquimula.WebSite\Chiquimula.Data\obj\Debug\Chiquimula.Data.dll
 D:\ChiquimulaWebSite\Chiquimula.WebSite\Chiquimula.Data\obj\Debug\Chiquimula.Data.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\Chiquimula.Data.dll.config
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\Chiquimula.Data.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\EntityFramework.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\EntityFramework.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.csprojResolveAssemblyReference.cache
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.pdb

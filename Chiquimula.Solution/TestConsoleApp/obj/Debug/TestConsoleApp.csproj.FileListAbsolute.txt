@@ -1,0 +1,10 @@
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.exe
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\EntityFramework.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\Chiquimula.Data.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\EntityFramework.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.csprojResolveAssemblyReference.cache
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.exe
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.pdb

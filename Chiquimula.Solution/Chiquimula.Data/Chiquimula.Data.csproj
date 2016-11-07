@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Crypto.cs" />
     <Compile Include="Imagen.cs">
       <DependentUpon>TourDataModel.tt</DependentUpon>
     </Compile>
@@ -71,6 +72,9 @@
       <DependentUpon>TourDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="TourService.cs" />
+    <Compile Include="Usuario.cs">
+      <DependentUpon>TourDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Video.cs">
       <DependentUpon>TourDataModel.tt</DependentUpon>
     </Compile>

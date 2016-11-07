@@ -11,12 +11,18 @@ namespace Chiquimula.WebSite.SitioTuristico
 {
     public partial class Edit : System.Web.UI.Page
     {
+        public int SitioID
+        {
+            get { return Convert.ToInt32(Request.QueryString["id"]); }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 MostrarInformacion(Convert.ToInt32(Request.QueryString["id"]));
             }
+
+            LnkMasFotos.NavigateUrl = "~/SitioTuristico/AddFotos.aspx?id=" + SitioID;
         }
 
         private void MostrarInformacion(int id)

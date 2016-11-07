@@ -128,6 +128,10 @@
                                         <div id="dvPreview" class="dvPreview"></div>
                                         <asp:Image runat="server" ID="ImagenPrincipal" CssClass="imgPreview" />
                                         <asp:HiddenField runat="server" ID="HdnCambio" Value="0" />
+                                        &nbsp;
+                                        <asp:HyperLink runat="server" Text="<i class='fa fa-upload'></i>&nbsp;Subir más imágenes"
+                                        ID="LnkMasFotos" CssClass="btn btn-warning"
+                                         CausesValidation="false" ></asp:HyperLink>
                                     </div>            
                                 </div>
                             </div>

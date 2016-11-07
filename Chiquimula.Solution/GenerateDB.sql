@@ -31,3 +31,11 @@ CREATE TABLE [dbo].[Sitio] (
     CONSTRAINT [FK_Sitio_To_Imagen] FOREIGN KEY ([imagenId]) REFERENCES [dbo].[Imagen] ([Id])
 );
 GO
+CREATE TABLE [dbo].[Usuario]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Email] VARCHAR(500) NOT NULL UNIQUE, 
+    [Password] VARCHAR(MAX) NOT NULL, 
+    [Usuario] VARCHAR(500) NOT NULL
+)
+GO

@@ -310,6 +310,15 @@ namespace Chiquimula.WebSite.SitioTuristico {
         protected global::System.Web.UI.WebControls.HiddenField HdnCambio;
         
         /// <summary>
+        /// LnkMasFotos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink LnkMasFotos;
+        
+        /// <summary>
         /// TxtInfo control.
         /// </summary>
         /// <remarks>

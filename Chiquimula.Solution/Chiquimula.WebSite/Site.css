@@ -292,3 +292,21 @@ body {
         height: 199px;
         width: 199px;
     }
+
+.img-tile {
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid;
+    max-height: 200px;
+    max-width: 200px;
+}
+.img-elim {
+    float:left;
+}
+
+.table-img td:hover{
+    border: 2px solid;
+    border-color: Highlight;
+    background-color: Highlight;
+    cursor:pointer;
+}

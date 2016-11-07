@@ -30,6 +30,15 @@
           <Property Name="datos" Type="varchar" MaxLength="4000" />
           <Property Name="masdatos" Type="varchar" MaxLength="4000" />
         </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Password" Type="varchar(max)" Nullable="false" />
+          <Property Name="Usuario" Type="varchar" MaxLength="500" Nullable="false" />
+        </EntityType>
         <EntityType Name="Video">
           <Key>
             <PropertyRef Name="Id" />
@@ -54,6 +63,7 @@
         <EntityContainer Name="TourModelStoreContainer">
           <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sitio" EntityType="Self.Sitio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Sitio_To_Imagen" Association="Self.FK_Sitio_To_Imagen">
             <End Role="Imagen" EntitySet="Imagen" />
@@ -106,6 +116,7 @@
             <End Role="Imagen" EntitySet="Imagen" />
             <End Role="Sitio" EntitySet="Sitio" />
           </AssociationSet>
+          <EntitySet Name="Usuario" EntityType="TourModel.Usuario" />
         </EntityContainer>
         <Association Name="FK_Sitio_To_Imagen">
           <End Type="TourModel.Imagen" Role="Imagen" Multiplicity="0..1" />
@@ -119,6 +130,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Usuario1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -159,6 +179,16 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="path" ColumnName="path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="TourModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

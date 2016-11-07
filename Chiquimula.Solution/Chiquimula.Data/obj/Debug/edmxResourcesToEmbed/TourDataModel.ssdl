@@ -25,6 +25,15 @@
     <Property Name="datos" Type="varchar" MaxLength="4000" />
     <Property Name="masdatos" Type="varchar" MaxLength="4000" />
   </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
   <EntityType Name="Video">
     <Key>
       <PropertyRef Name="Id" />
@@ -49,6 +58,7 @@
   <EntityContainer Name="TourModelStoreContainer">
     <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sitio" EntityType="Self.Sitio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Sitio_To_Imagen" Association="Self.FK_Sitio_To_Imagen">
       <End Role="Imagen" EntitySet="Imagen" />

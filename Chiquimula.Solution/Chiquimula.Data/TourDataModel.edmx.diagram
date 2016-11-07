@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="TourModel.Sitio" Width="1.5" PointX="3.625" PointY="0.5" IsExpanded="true" />
         <EntityTypeShape EntityType="TourModel.Video" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="TourModel.FK_Sitio_To_Imagen" />
+        <EntityTypeShape EntityType="TourModel.Usuario" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

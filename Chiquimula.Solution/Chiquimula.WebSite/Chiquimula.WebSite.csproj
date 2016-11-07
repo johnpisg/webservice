@@ -130,6 +130,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioTuristico\AddFotos.aspx.cs">
+      <DependentUpon>AddFotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioTuristico\AddFotos.aspx.designer.cs">
+      <DependentUpon>AddFotos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SitioTuristico\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +173,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -172,6 +187,7 @@
     <Compile Include="Site.master.designer.cs">
       <DependentUpon>Site.master</DependentUpon>
     </Compile>
+    <Content Include="SitioTuristico\AddFotos.aspx" />
     <Content Include="SitioTuristico\Edit.aspx" />
     <Content Include="SitioTuristico\Insert.aspx" />
     <Content Include="web.config" />

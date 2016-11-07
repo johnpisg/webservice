@@ -11,5 +11,11 @@ namespace Chiquimula.WebSite
         {
             Page.Header.DataBind();
         }
+
+        protected void LnkLogout_Click(object sender, EventArgs e)
+        {
+            Session["Ux"] = null;
+            Response.Redirect("~/Login.aspx");
+        }
     }
 }
