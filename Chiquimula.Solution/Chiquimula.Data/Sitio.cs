@@ -25,5 +25,7 @@ namespace Chiquimula.Data
         public string info { get; set; }
         public string datos { get; set; }
         public string masdatos { get; set; }
+        public decimal longitud { get; set; }
+        public decimal latitud { get; set; }
     }
 }

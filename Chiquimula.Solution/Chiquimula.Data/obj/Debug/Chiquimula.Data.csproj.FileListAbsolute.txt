@@ -19,6 +19,5 @@ C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\Chiquimula.Data.pdb
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\EntityFramework.dll
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Debug\EntityFramework.xml
-C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.csprojResolveAssemblyReference.cache
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.dll
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Debug\Chiquimula.Data.pdb

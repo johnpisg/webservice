@@ -29,6 +29,8 @@
           <Property Name="info" Type="varchar" MaxLength="4000" />
           <Property Name="datos" Type="varchar" MaxLength="4000" />
           <Property Name="masdatos" Type="varchar" MaxLength="4000" />
+          <Property Name="longitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
+          <Property Name="latitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
         </EntityType>
         <EntityType Name="Usuario">
           <Key>
@@ -98,6 +100,8 @@
           <Property Name="info" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
           <Property Name="datos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
           <Property Name="masdatos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="longitud" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="latitud" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
         </EntityType>
         <EntityType Name="Video">
           <Key>
@@ -158,6 +162,8 @@
           <EntitySetMapping Name="Sitio">
             <EntityTypeMapping TypeName="TourModel.Sitio">
               <MappingFragment StoreEntitySet="Sitio">
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="titulo" ColumnName="titulo" />
