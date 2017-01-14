@@ -62,6 +62,33 @@ namespace Chiquimula.Data
             
             return lista;
         }
-        
+     
+        public RankDto Rankear(RankDto dto)
+        {
+            using(var db = new TourEntities())
+            {
+                var sitio = (from s in db.Sitio
+                             where s.id == dto.SitioId
+                             select s).FirstOrDefault();
+
+                if(sitio != null)
+                {
+                    var rankActual = sitio.ranking;
+                    var usersActual = sitio.rankingUsers + 1;
+                    var rankDado = dto.Rank;
+
+                    float newRank = Convert.ToSingle((rankActual * (usersActual - 1) + rankDado) / usersActual);
+                    dto.RankingActual = newRank;
+
+                    sitio.ranking = newRank;
+                    sitio.rankingUsers = usersActual;
+
+                    db.Entry(sitio).State = System.Data.EntityState.Modified;
+                    db.SaveChanges();
+                }
+            }
+
+            return dto;
+        }   
     }
 }

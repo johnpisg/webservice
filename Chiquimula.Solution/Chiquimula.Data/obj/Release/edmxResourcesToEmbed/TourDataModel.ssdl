@@ -26,6 +26,7 @@
     <Property Name="masdatos" Type="varchar" MaxLength="4000" />
     <Property Name="longitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
     <Property Name="latitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
+    <Property Name="rankingUsers" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>

@@ -46,3 +46,6 @@ ALTER TABLE Sitio
 ADD latitud Decimal(9,6) NOT NULL DEFAULT 0
 GO
 
+ALTER TABLE Sitio
+ADD rankingUsers int NOT NULL DEFAULT 0
+GO

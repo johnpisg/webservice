@@ -24,9 +24,11 @@ namespace Chiquimula.WebApi.Controllers
         }
 
         // POST: api/Sitio
-        public void Post([FromBody]string value)
+        public RankDto PostAddRanking([FromBody]RankDto rankObject)
         {
+            return new TourService().Rankear(rankObject);
         }
+        
 
         // PUT: api/Sitio/5
         public void Put(int id, [FromBody]string value)
