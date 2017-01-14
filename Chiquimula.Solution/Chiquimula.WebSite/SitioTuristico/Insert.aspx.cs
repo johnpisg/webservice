@@ -40,6 +40,8 @@ namespace Chiquimula.WebSite.SitioTuristico
             sitio.datos = TxtDatos.Text;
             sitio.info = TxtInfo.Text;
             sitio.masdatos = TxtMasDatos.Text;
+            sitio.longitud = Helper.ConvertToDecimal(TxtLongitud.Text);
+            sitio.latitud = Helper.ConvertToDecimal(TxtLatitud.Text);
 
             string url = GuardarImagen();
             var imagen = new Imagen();

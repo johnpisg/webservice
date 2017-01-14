@@ -52,6 +52,11 @@ namespace Chiquimula.WebSite.SitioTuristico
                 TxtInfo.Text = sitio.info;
                 TxtMasDatos.Text = sitio.masdatos;
                 TxtPrecio.Text = sitio.precio.ToString();
+
+                TxtLongitud.Text = sitio.longitud.ToString("0.000000");
+                TxtLatitud.Text = sitio.latitud.ToString("0.000000");
+                
+
                 TxtTitulo.Text = sitio.titulo;
                 if (sitio.horario != null)
                     ShowHorario(sitio.horario);
@@ -136,6 +141,9 @@ namespace Chiquimula.WebSite.SitioTuristico
                     sitio.datos = TxtDatos.Text;
                     sitio.info = TxtInfo.Text;
                     sitio.masdatos = TxtMasDatos.Text;
+
+                    sitio.longitud = Helper.ConvertToDecimal(TxtLongitud.Text);
+                    sitio.latitud = Helper.ConvertToDecimal(TxtLatitud.Text);
 
                     if (HdnCambio.Value == "1")
                     {

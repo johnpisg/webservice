@@ -107,6 +107,12 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chiquimula.DTO\Chiquimula.DTO.csproj">
+      <Project>{5d8c64b2-e5c8-4e8c-bab3-f281d6eecc3f}</Project>
+      <Name>Chiquimula.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

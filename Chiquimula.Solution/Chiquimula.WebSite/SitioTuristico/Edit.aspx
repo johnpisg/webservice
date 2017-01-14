@@ -152,6 +152,19 @@
                         </div>                        
                     </div>
                     <div class="row form-group">
+                        <div class="col-xs-2">Longitud:</div>
+                        <div class="col-xs-4">
+                            <asp:TextBox runat="server" ID="TxtLongitud" MaxLength="15" 
+                                 TextMode="SingleLine" type="number"  CssClass="form-control"></asp:TextBox>                            
+                        </div>
+                        <div class="col-xs-2">Latitud:</div>
+                        <div class="col-xs-4">
+                            <asp:TextBox runat="server" ID="TxtLatitud" MaxLength="15" 
+                                TextMode="SingleLine" type="number"  CssClass="form-control"></asp:TextBox>
+                        </div>                     
+                    </div>
+
+                    <div class="row form-group">
                         <div class="col-xs-2">Más datos del sitio turístico:</div>
                         <div class="col-xs-10">
                             <asp:TextBox runat="server" ID="TxtMasDatos" MaxLength="3999" 
