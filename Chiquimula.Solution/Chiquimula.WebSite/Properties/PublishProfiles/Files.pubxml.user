@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/29/2016 15:43:27</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/29/2016 15:43:27</publishTime>
+    </File>
+    <File Include="bin/Chiquimula.Data.dll">
+      <publishTime>11/06/2016 18:59:21</publishTime>
+    </File>
+    <File Include="bin/Chiquimula.WebSite.dll">
+      <publishTime>11/06/2016 19:00:47</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 17:43:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/06/2016 15:40:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/06/2016 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/06/2016 10:42:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Diagnostics.Tracing.EventSource.dll">
+      <publishTime>12/01/2015 14:31:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bootstrap-theme.min.css">
+      <publishTime>10/29/2016 19:10:22</publishTime>
+    </File>
+    <File Include="bootstrap.min.css">
+      <publishTime>10/29/2016 19:09:28</publishTime>
+    </File>
+    <File Include="CSDynamicDataWebApplication.ico">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>11/05/2016 11:28:36</publishTime>
+    </File>
+    <File Include="DynamicData/Content/GridViewPager.ascx">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/Back.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/header_back.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/PgFirst.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/PgLast.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/PgNext.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/PgPrev.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/Content/Images/plus.gif">
+      <publishTime>10/29/2016 15:43:04</publishTime>
+    </File>
+    <File Include="DynamicData/EntityTemplates/Default.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/EntityTemplates/Default_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/EntityTemplates/Default_Insert.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Boolean.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Boolean_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Children.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Children_Insert.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/DateTime.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/DateTime_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Decimal_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/EmailAddress.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/EmailAddress_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Enumeration.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Enumeration_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/ForeignKey.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/ForeignKey_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Integer_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/ManyToMany.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/ManyToMany_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/MultilineText_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Text.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Text_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Url.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/FieldTemplates/Url_Edit.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/Filters/Boolean.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/Filters/Enumeration.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/Filters/ForeignKey.ascx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/PageTemplates/Details.aspx">
+      <publishTime>11/05/2016 14:28:09</publishTime>
+    </File>
+    <File Include="DynamicData/PageTemplates/Edit.aspx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/PageTemplates/Insert.aspx">
+      <publishTime>11/05/2016 12:24:00</publishTime>
+    </File>
+    <File Include="DynamicData/PageTemplates/List.aspx">
+      <publishTime>11/05/2016 19:56:17</publishTime>
+    </File>
+    <File Include="DynamicData/PageTemplates/ListDetails.aspx">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="DynamicData/web.config">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>11/06/2016 17:56:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/29/2016 15:48:37</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.js">
+      <publishTime>10/29/2016 15:43:28</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>10/29/2016 15:43:28</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/29/2016 19:11:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.intellisense.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>10/29/2016 19:19:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.min.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.5.3.js">
+      <publishTime>10/29/2016 15:43:05</publishTime>
+    </File>
+    <File Include="Site.css">
+      <publishTime>11/06/2016 15:28:10</publishTime>
+    </File>
+    <File Include="Site.master">
+      <publishTime>11/06/2016 18:50:34</publishTime>
+    </File>
+    <File Include="SitioTuristico/AddFotos.aspx">
+      <publishTime>11/06/2016 15:33:03</publishTime>
+    </File>
+    <File Include="SitioTuristico/Edit.aspx">
+      <publishTime>11/06/2016 15:06:59</publishTime>
+    </File>
+    <File Include="SitioTuristico/Insert.aspx">
+      <publishTime>11/05/2016 20:02:30</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>11/06/2016 19:00:48</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TourModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Imagen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="path" Type="varchar" MaxLength="2500" Nullable="false" />
+    <Property Name="sitioId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sitio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="ranking" Type="float" Nullable="false" />
+    <Property Name="imagenId" Type="int" />
+    <Property Name="horario" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="precio" Type="float" Nullable="false" />
+    <Property Name="info" Type="varchar" MaxLength="4000" />
+    <Property Name="datos" Type="varchar" MaxLength="4000" />
+    <Property Name="masdatos" Type="varchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Video">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="path" Type="varchar" MaxLength="2500" Nullable="false" />
+    <Property Name="sitioId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Sitio_To_Imagen">
+    <End Role="Imagen" Type="Self.Imagen" Multiplicity="0..1" />
+    <End Role="Sitio" Type="Self.Sitio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Imagen">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sitio">
+        <PropertyRef Name="imagenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TourModelStoreContainer">
+    <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sitio" EntityType="Self.Sitio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Sitio_To_Imagen" Association="Self.FK_Sitio_To_Imagen">
+      <End Role="Imagen" EntitySet="Imagen" />
+      <End Role="Sitio" EntitySet="Sitio" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

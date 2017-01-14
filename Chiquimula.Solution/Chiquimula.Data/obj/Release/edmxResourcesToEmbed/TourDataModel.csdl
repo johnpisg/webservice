@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TourModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Imagen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="2500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sitioId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sitio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="titulo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ranking" Type="Double" Nullable="false" />
+    <Property Name="imagenId" Type="Int32" />
+    <Property Name="horario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio" Type="Double" Nullable="false" />
+    <Property Name="info" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="datos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="masdatos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Video">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="2500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sitioId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TourEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Imagen" EntityType="Self.Imagen" />
+    <EntitySet Name="Sitio" EntityType="Self.Sitio" />
+    <EntitySet Name="Video" EntityType="Self.Video" />
+    <AssociationSet Name="FK_Sitio_To_Imagen" Association="TourModel.FK_Sitio_To_Imagen">
+      <End Role="Imagen" EntitySet="Imagen" />
+      <End Role="Sitio" EntitySet="Sitio" />
+    </AssociationSet>
+    <EntitySet Name="Usuario" EntityType="TourModel.Usuario" />
+  </EntityContainer>
+  <Association Name="FK_Sitio_To_Imagen">
+    <End Type="TourModel.Imagen" Role="Imagen" Multiplicity="0..1" />
+    <End Type="TourModel.Sitio" Role="Sitio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Imagen">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sitio">
+        <PropertyRef Name="imagenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
