@@ -301,6 +301,24 @@ namespace Chiquimula.WebSite.SitioTuristico {
         protected global::System.Web.UI.WebControls.TextBox TxtDatos;
         
         /// <summary>
+        /// TxtLongitud control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtLongitud;
+        
+        /// <summary>
+        /// TxtLatitud control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtLatitud;
+        
+        /// <summary>
         /// TxtMasDatos control.
         /// </summary>
         /// <remarks>

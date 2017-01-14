@@ -39,3 +39,10 @@ CREATE TABLE [dbo].[Usuario]
     [Usuario] VARCHAR(500) NOT NULL
 )
 GO
+ALTER TABLE Sitio
+ADD longitud Decimal(9,6) NOT NULL DEFAULT 0
+GO
+ALTER TABLE Sitio
+ADD latitud Decimal(9,6) NOT NULL DEFAULT 0
+GO
+

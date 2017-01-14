@@ -8,3 +8,13 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debu
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.exe
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.pdb
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.exe
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\TestConsoleApp.pdb
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\Chiquimula.Data.dll
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\EntityFramework.dll
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\Chiquimula.Data.pdb
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\bin\Debug\EntityFramework.xml
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.csprojResolveAssemblyReference.cache
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.exe
+C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\TestConsoleApp\obj\Debug\TestConsoleApp.pdb

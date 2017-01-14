@@ -24,6 +24,8 @@
     <Property Name="info" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
     <Property Name="datos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
     <Property Name="masdatos" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+    <Property Name="latitud" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
   </EntityType>
   <EntityType Name="Video">
     <Key>
