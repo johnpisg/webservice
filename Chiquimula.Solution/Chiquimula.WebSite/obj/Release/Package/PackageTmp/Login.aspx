@@ -25,7 +25,7 @@
 				<div class="panel panel-login">
 					<div class="panel-heading">
 						<div class="row">
-							<div class="col-xs-6 text-center">
+							<div class="col-xs-12 text-center azul">
 								<h4>Iniciar sesión</h4>
 							</div>							
 						</div>

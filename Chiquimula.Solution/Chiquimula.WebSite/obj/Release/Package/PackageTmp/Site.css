@@ -310,3 +310,30 @@ body {
     background-color: Highlight;
     cursor:pointer;
 }
+
+/******MINE */
+.azul {
+    background-color: cadetblue;
+    color: white;
+}
+
+.titulo-azul {
+    background-color: cadetblue;
+    color: white;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.table-header {
+    background-color: cadetblue;
+    color: white;
+}
+.table-header th {
+    text-transform: capitalize;
+}
+.table-header a {
+    color: white !important;
+}
+

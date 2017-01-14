@@ -7,7 +7,7 @@
     <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server" />
 
     <asp:GridView ID="Menu1" runat="server" AutoGenerateColumns="false"
-        CssClass="DDGridView" RowStyle-CssClass="td" HeaderStyle-CssClass="th" CellPadding="6">
+        CssClass="DDGridView table table-hover table-bordered" RowStyle-CssClass="td" HeaderStyle-CssClass="th" CellPadding="6">
         <Columns>
             <asp:TemplateField HeaderText="Menú:">
                 <ItemTemplate>

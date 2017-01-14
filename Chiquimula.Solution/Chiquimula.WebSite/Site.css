@@ -326,13 +326,14 @@ body {
     padding-left: 15px;
 }
 
-.th, .th:hover {
+.table-header {
     background-color: cadetblue;
     color: white;
 }
-.th th {
+.table-header th {
     text-transform: capitalize;
 }
-.th a, .th a:hover {
+.table-header a {
     color: white !important;
 }
+

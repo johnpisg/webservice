@@ -2,4 +2,3 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Debu
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Debug\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Debug\Chiquimula.DTO.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Debug\Chiquimula.DTO.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Debug\Chiquimula.DTO.csprojResolveAssemblyReference.cache
