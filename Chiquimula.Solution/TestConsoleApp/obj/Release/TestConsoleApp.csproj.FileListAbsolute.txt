@@ -3,7 +3,10 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Rele
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\TestConsoleApp.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.Data.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\EntityFramework.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.DTO.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.Data.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\EntityFramework.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.exe
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.csprojResolveAssemblyReference.cache

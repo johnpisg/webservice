@@ -1,0 +1,4 @@
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\Chiquimula.DTO.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\Chiquimula.DTO.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Release\Chiquimula.DTO.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Release\Chiquimula.DTO.pdb

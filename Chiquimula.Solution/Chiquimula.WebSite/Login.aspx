@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Dynamic Data Site</title>
+    <title>City - Tour, Chiquimula</title>
     
     <link href="~/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/bootstrap.min.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
 				<div class="panel panel-login">
 					<div class="panel-heading">
 						<div class="row">
-							<div class="col-xs-6 text-center">
+							<div class="col-xs-12 text-center azul">
 								<h4>Iniciar sesión</h4>
 							</div>							
 						</div>

@@ -1,0 +1,10 @@
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.dll.config
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.DTO.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\EntityFramework.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.DTO.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\EntityFramework.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.csprojResolveAssemblyReference.cache
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.pdb

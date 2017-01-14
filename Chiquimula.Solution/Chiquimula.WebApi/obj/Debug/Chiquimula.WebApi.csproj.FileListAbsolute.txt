@@ -150,3 +150,4 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\A
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\EntityFramework.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Elmah.dll

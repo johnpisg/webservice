@@ -15,6 +15,8 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\C
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.WebApi.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Antlr3.Runtime.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.DTO.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Elmah.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Microsoft.Web.Infrastructure.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Newtonsoft.Json.dll
@@ -31,6 +33,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\S
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\WebGrease.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\EntityFramework.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.Data.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Newtonsoft.Json.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Net.Http.Formatting.xml

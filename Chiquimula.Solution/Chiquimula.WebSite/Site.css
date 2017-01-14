@@ -310,3 +310,29 @@ body {
     background-color: Highlight;
     cursor:pointer;
 }
+
+/******MINE */
+.azul {
+    background-color: cadetblue;
+    color: white;
+}
+
+.titulo-azul {
+    background-color: cadetblue;
+    color: white;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.th, .th:hover {
+    background-color: cadetblue;
+    color: white;
+}
+.th th {
+    text-transform: capitalize;
+}
+.th a, .th a:hover {
+    color: white !important;
+}

@@ -3,6 +3,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.WebSite.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.WebSite.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Elmah.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\EntityFramework.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Microsoft.AI.Agent.Intercept.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Microsoft.AI.DependencyCollector.dll
@@ -18,6 +19,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.IO.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Runtime.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Threading.Tasks.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.DTO.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.Data.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\EntityFramework.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Microsoft.AI.DependencyCollector.xml
@@ -32,6 +34,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.IO.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Runtime.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Threading.Tasks.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Release\Chiquimula.WebSite.csproj.App.config
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Release\Chiquimula.WebSite.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Release\Chiquimula.WebSite.dll

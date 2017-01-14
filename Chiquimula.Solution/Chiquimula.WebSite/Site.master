@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Dynamic Data Site</title>
+    <title>City - Tour, Chiquimula</title>
     
     <link href="~/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/bootstrap.min.css" rel="stylesheet" />
@@ -19,15 +19,21 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <h2 class="">Chiquimula - Sitio Web de Administración.</h2>
+    <h2 class="titulo-azul">Chiquimula - Sitio Web de Administración.</h2>
     <form id="form1" runat="server">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-6 text-left">
-                <a runat="server" href="~/">Volver a Inicio</a>
+                <a class="btn btn-info" runat="server" href="~/">
+                    <span class="fa fa-home"></span>
+                    Volver a Inicio
+                </a>
             </div>
             <div class="col-xs-6 text-right">
-                <asp:LinkButton runat="server" ID="LnkLogout" OnClick="LnkLogout_Click" Text="Salir" ></asp:LinkButton>
+                <asp:LinkButton CssClass="btn btn-warning" runat="server" ID="LnkLogout" 
+                    OnClick="LnkLogout_Click">
+                    <span class="fa fa-sign-out"></span>Salir
+                </asp:LinkButton>
             </div>
         </div>        
     </div>

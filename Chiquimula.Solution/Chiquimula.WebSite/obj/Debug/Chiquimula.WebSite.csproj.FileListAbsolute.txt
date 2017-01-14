@@ -114,3 +114,4 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Elmah.dll
