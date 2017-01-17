@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Comentario.cs">
+      <DependentUpon>TourDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Crypto.cs" />
     <Compile Include="Imagen.cs">
       <DependentUpon>TourDataModel.tt</DependentUpon>
