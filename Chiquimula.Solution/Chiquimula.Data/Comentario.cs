@@ -18,5 +18,7 @@ namespace Chiquimula.Data
         public string Texto { get; set; }
         public string Usuario { get; set; }
         public int sitioId { get; set; }
+        public string deviceUniqueId { get; set; }
+        public System.DateTime fecha { get; set; }
     }
 }
