@@ -197,5 +197,29 @@ namespace Chiquimula.Data
 
             return true;
         }
+
+        public List<GeoSitioDto> GetSitiosCercanos(GeoSitioDto ubicacion)
+        {
+            List<GeoSitioDto> resultado = new List<GeoSitioDto>();
+            using (var db = new TourEntities())
+            {
+                var lista = db.GetSitiosMasCercanos(Convert.ToDouble(ubicacion.Latitud),
+                    Convert.ToDouble(ubicacion.Longitud),
+                    Convert.ToDouble(ubicacion.DistanciaKm)).ToList();
+                foreach(var dom in lista)
+                {
+                    resultado.Add(new GeoSitioDto()
+                    {
+                        SitioId = dom.id,
+                        SitioNombre = dom.nombre,
+                        Latitud = dom.latitud,
+                        Longitud = dom.longitud,
+                        DistanciaKm = Convert.ToDecimal(dom.distanciaKm.Value)
+                    });
+                }
+
+            }
+            return resultado;
+        }
     }
 }
