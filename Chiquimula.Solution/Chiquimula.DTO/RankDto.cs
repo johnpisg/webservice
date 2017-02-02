@@ -10,5 +10,6 @@ namespace Chiquimula.DTO
         public int SitioId { get; set; }
         public float RankingActual { get; set; }
         public int Rank { get; set; }
+        public string DeviceId { get; set; }
     }
 }

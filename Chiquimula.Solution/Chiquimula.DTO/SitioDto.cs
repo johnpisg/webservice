@@ -23,5 +23,6 @@ namespace Chiquimula.DTO
         public decimal latitud { get; set; }
         public List<string> imagenes { get; set; }
         public List<string> videos { get; set; }
+        public bool rankear { get; set; }
     }
 }

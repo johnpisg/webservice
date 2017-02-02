@@ -10,7 +10,9 @@
         <EntityTypeShape EntityType="TourModel.Video" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="TourModel.FK_Sitio_To_Imagen" />
         <EntityTypeShape EntityType="TourModel.Usuario" Width="1.5" PointX="0.75" PointY="4.75" />
-        <EntityTypeShape EntityType="TourModel.Comentario" Width="1.5" PointX="3.375" PointY="5.75" />
+        <EntityTypeShape EntityType="TourModel.Device" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="TourModel.SitioRanking" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="TourModel.Comentario" Width="1.5" PointX="3.25" PointY="5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

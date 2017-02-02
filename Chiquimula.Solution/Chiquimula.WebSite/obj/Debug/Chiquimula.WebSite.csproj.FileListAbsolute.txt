@@ -74,13 +74,12 @@ C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Deb
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.csprojResolveAssemblyReference.cache
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.dll
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.csproj.App.config
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\ApplicationInsights.config
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.WebSite.dll.config
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.WebSite.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.WebSite.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.Data.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Elmah.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\EntityFramework.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Microsoft.AI.Agent.Intercept.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Microsoft.AI.DependencyCollector.dll
@@ -112,6 +111,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Runtime.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\System.Threading.Tasks.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Chiquimula.DTO.pdb
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.csproj.App.config
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\obj\Debug\Chiquimula.WebSite.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebSite\bin\Elmah.dll

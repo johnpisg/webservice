@@ -12,27 +12,30 @@ namespace Chiquimula.WebApi.Controllers
     public class SitioController : ApiController
     {
         // GET: api/Sitio
-        public List<SitioDto> Get()
+        public List<SitioDto> Get(string deviceUniqueId)
         {
-            return new TourService().GetAllSitios();
+            return new TourService().GetAllSitios(deviceUniqueId);
         }
 
         // GET: api/Sitio/5
-        public string Get(int id)
+        public SitioDto GetDetalleSitio(string deviceUniqueId, int id)
         {
-            return "value";
+            return new TourService().GetSitioById(deviceUniqueId, id); 
         }
 
         // POST: api/Sitio
         public RankDto PostAddRanking([FromBody]RankDto rankObject)
         {
+            //rankear
             return new TourService().Rankear(rankObject);
         }
         
 
         // PUT: api/Sitio/5
-        public void Put(int id, [FromBody]string value)
+        public bool Put(int id, [FromBody]ComentarioDto comentario)
         {
+            //Comentar
+            return new TourService().Comentar(comentario);
         }
 
         // DELETE: api/Sitio/5

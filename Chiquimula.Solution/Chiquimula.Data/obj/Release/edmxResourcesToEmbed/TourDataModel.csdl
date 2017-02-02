@@ -46,6 +46,13 @@
       <End Role="Sitio" EntitySet="Sitio" />
     </AssociationSet>
     <EntitySet Name="Usuario" EntityType="TourModel.Usuario" />
+    <EntitySet Name="Device" EntityType="TourModel.Device" />
+    <EntitySet Name="SitioRanking" EntityType="TourModel.SitioRanking" />
+    <FunctionImport Name="GetSitiosMasCercanos" ReturnType="Collection(TourModel.GetSitiosMasCercanos_Result)">
+      <Parameter Name="miLatitud" Mode="In" Type="Double" />
+      <Parameter Name="miLongitud" Mode="In" Type="Double" />
+      <Parameter Name="kmAlaRedonda" Mode="In" Type="Double" />
+    </FunctionImport>
     <EntitySet Name="Comentario" EntityType="TourModel.Comentario" />
   </EntityContainer>
   <Association Name="FK_Sitio_To_Imagen">
@@ -69,13 +76,49 @@
     <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Usuario1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
   </EntityType>
+  <EntityType Name="Device">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uniqueDeviceId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SitioRanking">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ranking" Type="Int32" Nullable="false" />
+    <Property Name="sitioId" Type="Int32" Nullable="false" />
+    <Property Name="deviceUniqueId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="GetSitiosMasCercanos_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="titulo" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="descripcion" Nullable="false" MaxLength="4000" />
+    <Property Type="Double" Name="ranking" Nullable="false" />
+    <Property Type="Int32" Name="imagenId" Nullable="true" />
+    <Property Type="String" Name="horario" Nullable="false" MaxLength="250" />
+    <Property Type="Double" Name="precio" Nullable="false" />
+    <Property Type="String" Name="info" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="datos" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="masdatos" Nullable="true" MaxLength="4000" />
+    <Property Type="Decimal" Name="longitud" Nullable="false" Precision="9" Scale="6" />
+    <Property Type="Decimal" Name="latitud" Nullable="false" Precision="9" Scale="6" />
+    <Property Type="Int32" Name="rankingUsers" Nullable="false" />
+    <Property Type="Double" Name="distanciaKm" Nullable="true" />
+  </ComplexType>
   <EntityType Name="Comentario">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Texto" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="sitioId" Type="Int32" Nullable="false" />
+    <Property Name="deviceUniqueId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
 </Schema>

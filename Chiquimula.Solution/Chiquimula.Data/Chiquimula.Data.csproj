@@ -52,11 +52,20 @@
       <DependentUpon>TourDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Crypto.cs" />
+    <Compile Include="Device.cs">
+      <DependentUpon>TourDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSitiosMasCercanos_Result.cs">
+      <DependentUpon>TourDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Imagen.cs">
       <DependentUpon>TourDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sitio.cs">
+      <DependentUpon>TourDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SitioRanking.cs">
       <DependentUpon>TourDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TourDataModel.Context.cs">

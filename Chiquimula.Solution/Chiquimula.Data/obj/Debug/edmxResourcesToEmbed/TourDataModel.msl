@@ -14,6 +14,7 @@
     <EntitySetMapping Name="Sitio">
       <EntityTypeMapping TypeName="TourModel.Sitio">
         <MappingFragment StoreEntitySet="Sitio">
+          <ScalarProperty Name="rankingUsers" ColumnName="rankingUsers" />
           <ScalarProperty Name="latitud" ColumnName="latitud" />
           <ScalarProperty Name="longitud" ColumnName="longitud" />
           <ScalarProperty Name="id" ColumnName="id" />
@@ -46,6 +47,58 @@
           <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Device">
+      <EntityTypeMapping TypeName="TourModel.Device">
+        <MappingFragment StoreEntitySet="Device">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="uniqueDeviceId" ColumnName="uniqueDeviceId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SitioRanking">
+      <EntityTypeMapping TypeName="TourModel.SitioRanking">
+        <MappingFragment StoreEntitySet="SitioRanking">
+          <ScalarProperty Name="deviceUniqueId" ColumnName="deviceUniqueId" />
+          <ScalarProperty Name="sitioId" ColumnName="sitioId" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetSitiosMasCercanos" FunctionName="TourModel.Store.GetSitiosMasCercanos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourModel.GetSitiosMasCercanos_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="imagenId" ColumnName="imagenId" />
+          <ScalarProperty Name="horario" ColumnName="horario" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="datos" ColumnName="datos" />
+          <ScalarProperty Name="masdatos" ColumnName="masdatos" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="rankingUsers" ColumnName="rankingUsers" />
+          <ScalarProperty Name="distanciaKm" ColumnName="distanciaKm" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Comentario">
+      <EntityTypeMapping TypeName="TourModel.Comentario">
+        <MappingFragment StoreEntitySet="Comentario">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="deviceUniqueId" ColumnName="deviceUniqueId" />
+          <ScalarProperty Name="sitioId" ColumnName="sitioId" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

@@ -6,8 +6,18 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Texto" Type="varchar(max)" Nullable="false" />
-    <Property Name="Usuario" Type="varchar(max)" Nullable="false" />
+    <Property Name="Usuario" Type="varchar(max)" />
     <Property Name="sitioId" Type="int" Nullable="false" />
+    <Property Name="deviceUniqueId" Type="varchar(max)" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Device">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uniqueDeviceId" Type="varchar(max)" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
   </EntityType>
   <EntityType Name="Imagen">
     <Key>
@@ -36,6 +46,15 @@
     <Property Name="longitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
     <Property Name="latitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
     <Property Name="rankingUsers" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SitioRanking">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deviceUniqueId" Type="varchar(max)" Nullable="false" />
+    <Property Name="ranking" Type="int" Nullable="false" />
+    <Property Name="sitioId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
@@ -67,10 +86,17 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="GetSitiosMasCercanos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="miLatitud" Type="float" Mode="In" />
+    <Parameter Name="miLongitud" Type="float" Mode="In" />
+    <Parameter Name="kmAlaRedonda" Type="float" Mode="In" />
+  </Function>
   <EntityContainer Name="TourModelStoreContainer">
     <EntitySet Name="Comentario" EntityType="Self.Comentario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Device" EntityType="Self.Device" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sitio" EntityType="Self.Sitio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SitioRanking" EntityType="Self.SitioRanking" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Sitio_To_Imagen" Association="Self.FK_Sitio_To_Imagen">

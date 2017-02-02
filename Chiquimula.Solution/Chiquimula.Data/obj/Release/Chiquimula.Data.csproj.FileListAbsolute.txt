@@ -8,3 +8,13 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Rel
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.pdb
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.dll.config
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.dll
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.Data.pdb
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.DTO.dll
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\EntityFramework.dll
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\Chiquimula.DTO.pdb
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\bin\Release\EntityFramework.xml
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.csprojResolveAssemblyReference.cache
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.dll
+C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.Data\obj\Release\Chiquimula.Data.pdb

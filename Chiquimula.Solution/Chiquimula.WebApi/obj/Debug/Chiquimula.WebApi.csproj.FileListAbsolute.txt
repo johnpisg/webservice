@@ -98,7 +98,6 @@ C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Enti
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.csprojResolveAssemblyReference.cache
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.dll
 C:\SourceCode\Mio\tour\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\roslyn\csc.exe
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -117,6 +116,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\C
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Antlr3.Runtime.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.Data.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Chiquimula.DTO.dll
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Elmah.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Microsoft.Web.Infrastructure.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Newtonsoft.Json.dll
@@ -146,8 +146,7 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\S
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.Deployment.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.Razor.xml
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Antlr3.Runtime.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\EntityFramework.xml
+D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Debug\Chiquimula.WebApi.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Elmah.dll

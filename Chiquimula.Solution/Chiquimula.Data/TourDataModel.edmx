@@ -11,8 +11,18 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Texto" Type="varchar(max)" Nullable="false" />
-          <Property Name="Usuario" Type="varchar(max)" Nullable="false" />
+          <Property Name="Usuario" Type="varchar(max)" />
           <Property Name="sitioId" Type="int" Nullable="false" />
+          <Property Name="deviceUniqueId" Type="varchar(max)" />
+          <Property Name="fecha" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Device">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uniqueDeviceId" Type="varchar(max)" Nullable="false" />
+          <Property Name="fecha" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Imagen">
           <Key>
@@ -41,6 +51,15 @@
           <Property Name="longitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
           <Property Name="latitud" Type="decimal" Precision="9" Scale="6" Nullable="false" />
           <Property Name="rankingUsers" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SitioRanking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="deviceUniqueId" Type="varchar(max)" Nullable="false" />
+          <Property Name="ranking" Type="int" Nullable="false" />
+          <Property Name="sitioId" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Usuario">
           <Key>
@@ -72,10 +91,17 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="GetSitiosMasCercanos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="miLatitud" Type="float" Mode="In" />
+          <Parameter Name="miLongitud" Type="float" Mode="In" />
+          <Parameter Name="kmAlaRedonda" Type="float" Mode="In" />
+        </Function>
         <EntityContainer Name="TourModelStoreContainer">
           <EntitySet Name="Comentario" EntityType="Self.Comentario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Device" EntityType="Self.Device" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sitio" EntityType="Self.Sitio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SitioRanking" EntityType="Self.SitioRanking" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Sitio_To_Imagen" Association="Self.FK_Sitio_To_Imagen">
@@ -133,6 +159,13 @@
             <End Role="Sitio" EntitySet="Sitio" />
           </AssociationSet>
           <EntitySet Name="Usuario" EntityType="TourModel.Usuario" />
+          <EntitySet Name="Device" EntityType="TourModel.Device" />
+          <EntitySet Name="SitioRanking" EntityType="TourModel.SitioRanking" />
+          <FunctionImport Name="GetSitiosMasCercanos" ReturnType="Collection(TourModel.GetSitiosMasCercanos_Result)">
+            <Parameter Name="miLatitud" Mode="In" Type="Double" />
+            <Parameter Name="miLongitud" Mode="In" Type="Double" />
+            <Parameter Name="kmAlaRedonda" Mode="In" Type="Double" />
+          </FunctionImport>
           <EntitySet Name="Comentario" EntityType="TourModel.Comentario" />
         </EntityContainer>
         <Association Name="FK_Sitio_To_Imagen">
@@ -156,14 +189,50 @@
           <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Usuario1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="Device">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uniqueDeviceId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SitioRanking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ranking" Type="Int32" Nullable="false" />
+          <Property Name="sitioId" Type="Int32" Nullable="false" />
+          <Property Name="deviceUniqueId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="GetSitiosMasCercanos_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="titulo" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="descripcion" Nullable="false" MaxLength="4000" />
+          <Property Type="Double" Name="ranking" Nullable="false" />
+          <Property Type="Int32" Name="imagenId" Nullable="true" />
+          <Property Type="String" Name="horario" Nullable="false" MaxLength="250" />
+          <Property Type="Double" Name="precio" Nullable="false" />
+          <Property Type="String" Name="info" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="datos" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="masdatos" Nullable="true" MaxLength="4000" />
+          <Property Type="Decimal" Name="longitud" Nullable="false" Precision="9" Scale="6" />
+          <Property Type="Decimal" Name="latitud" Nullable="false" Precision="9" Scale="6" />
+          <Property Type="Int32" Name="rankingUsers" Nullable="false" />
+          <Property Type="Double" Name="distanciaKm" Nullable="true" />
+        </ComplexType>
         <EntityType Name="Comentario">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Texto" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Usuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Usuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="sitioId" Type="Int32" Nullable="false" />
+          <Property Name="deviceUniqueId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -221,9 +290,51 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Device">
+            <EntityTypeMapping TypeName="TourModel.Device">
+              <MappingFragment StoreEntitySet="Device">
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="uniqueDeviceId" ColumnName="uniqueDeviceId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SitioRanking">
+            <EntityTypeMapping TypeName="TourModel.SitioRanking">
+              <MappingFragment StoreEntitySet="SitioRanking">
+                <ScalarProperty Name="deviceUniqueId" ColumnName="deviceUniqueId" />
+                <ScalarProperty Name="sitioId" ColumnName="sitioId" />
+                <ScalarProperty Name="ranking" ColumnName="ranking" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetSitiosMasCercanos" FunctionName="TourModel.Store.GetSitiosMasCercanos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TourModel.GetSitiosMasCercanos_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="ranking" ColumnName="ranking" />
+                <ScalarProperty Name="imagenId" ColumnName="imagenId" />
+                <ScalarProperty Name="horario" ColumnName="horario" />
+                <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="info" ColumnName="info" />
+                <ScalarProperty Name="datos" ColumnName="datos" />
+                <ScalarProperty Name="masdatos" ColumnName="masdatos" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="rankingUsers" ColumnName="rankingUsers" />
+                <ScalarProperty Name="distanciaKm" ColumnName="distanciaKm" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <EntitySetMapping Name="Comentario">
             <EntityTypeMapping TypeName="TourModel.Comentario">
               <MappingFragment StoreEntitySet="Comentario">
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="deviceUniqueId" ColumnName="deviceUniqueId" />
                 <ScalarProperty Name="sitioId" ColumnName="sitioId" />
                 <ScalarProperty Name="Usuario" ColumnName="Usuario" />
                 <ScalarProperty Name="Texto" ColumnName="Texto" />
