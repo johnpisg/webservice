@@ -74,6 +74,75 @@ namespace Chiquimula.Data
             return lista;
         }
 
+        public List<SitioDto> GetTopSitios(string deviceUniqueId, int number)
+        {
+            var lista = new List<SitioDto>();
+            var listaDom = new List<Sitio>();
+
+            using (var db = new TourEntities())
+            {
+                listaDom = (from s in db.Sitio
+                            orderby s.ranking descending
+                            select s)
+                            .Take(number)
+                            .ToList();
+
+                foreach (var dom in listaDom)
+                {
+                    bool rankeadoYa = false;
+                    if (!string.IsNullOrWhiteSpace(deviceUniqueId))
+                    {
+                        rankeadoYa = (from r in db.SitioRanking
+                                      where r.deviceUniqueId == deviceUniqueId
+                                      && r.sitioId == 1
+                                      select r.id)
+                                      .Count() > 0;
+                    }
+
+                    var sitio = new SitioDto()
+                    {
+                        id = dom.id,
+                        datos = dom.datos,
+                        descripcion = dom.descripcion,
+                        horario = dom.horario,
+                        imagenId = dom.imagenId,
+                        info = dom.info,
+                        latitud = dom.latitud,
+                        longitud = dom.longitud,
+                        masdatos = dom.masdatos,
+                        nombre = dom.nombre,
+                        precio = dom.precio,
+                        ranking = dom.ranking,
+                        titulo = dom.titulo,
+                        imagenes = new List<string>(),
+                        videos = new List<string>(),
+                        rankear = !rankeadoYa
+                    };
+                    //obtener las imagenes URL y videos.
+
+                    var imagenes = (from i in db.Imagen
+                                    where i.sitioId == dom.id
+                                    select i).ToList();
+                    imagenes.ForEach(x =>
+                    {
+                        sitio.imagenes.Add(x.path);
+                    });
+
+                    var videos = (from i in db.Video
+                                  where i.sitioId == dom.id
+                                  select i).ToList();
+                    videos.ForEach(x =>
+                    {
+                        sitio.videos.Add(x.path);
+                    });
+
+                    lista.Add(sitio);
+                }
+            }
+
+            return lista;
+        }
+
         public SitioDto GetSitioById(string deviceUniqueId, int sitioId)
         {
             SitioDto sitio = null;

@@ -46,7 +46,6 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\S
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.Deployment.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\System.Web.WebPages.Razor.xml
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\Antlr3.Runtime.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\bin\EntityFramework.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Release\Chiquimula.WebApi.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.WebApi\obj\Release\Chiquimula.WebApi.dll

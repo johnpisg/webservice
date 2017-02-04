@@ -17,6 +17,12 @@ namespace Chiquimula.WebApi.Controllers
             return new TourService().GetAllSitios(deviceUniqueId);
         }
 
+        // GET: api/Sitio
+        public List<SitioDto> GetTop(string deviceUniqueId, int number)
+        {
+            return new TourService().GetTopSitios(deviceUniqueId, number);
+        }
+
         // GET: api/Sitio/5
         public SitioDto GetDetalleSitio(string deviceUniqueId, int id)
         {
