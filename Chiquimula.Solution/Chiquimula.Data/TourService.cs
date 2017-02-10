@@ -25,7 +25,7 @@ namespace Chiquimula.Data
                     {
                         rankeadoYa = (from r in db.SitioRanking
                                       where r.deviceUniqueId == deviceUniqueId
-                                      && r.sitioId == 1
+                                      && r.sitioId == dom.id
                                       select r.id)
                                       .Count() > 0;
                     }
