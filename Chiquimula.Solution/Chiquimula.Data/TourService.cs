@@ -25,7 +25,7 @@ namespace Chiquimula.Data
                     {
                         rankeadoYa = (from r in db.SitioRanking
                                       where r.deviceUniqueId == deviceUniqueId
-                                      && r.sitioId == 1
+                                      && r.sitioId == dom.id
                                       select r.id)
                                       .Count() > 0;
                     }
@@ -94,7 +94,7 @@ namespace Chiquimula.Data
                     {
                         rankeadoYa = (from r in db.SitioRanking
                                       where r.deviceUniqueId == deviceUniqueId
-                                      && r.sitioId == 1
+                                      && r.sitioId == dom.id
                                       select r.id)
                                       .Count() > 0;
                     }
@@ -287,6 +287,19 @@ namespace Chiquimula.Data
                     });
                 }
 
+            }
+            return resultado;
+        }
+
+        public List<string> GetVideosUrlBySitioId(int sitioId)
+        {
+            List<string> resultado = new List<string>();
+            using (var db = new TourEntities())
+            {
+                var query = from v in db.Video
+                            where v.sitioId == sitioId
+                            select v.path;
+                resultado = query.ToList();
             }
             return resultado;
         }
