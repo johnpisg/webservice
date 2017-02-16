@@ -162,7 +162,7 @@ namespace Chiquimula.Data
                     {
                         rankeadoYa = (from r in db.SitioRanking
                                       where r.deviceUniqueId == deviceUniqueId
-                                      && r.sitioId == 1
+                                      && r.sitioId == sitioId
                                       select r.id)
                                       .Count() > 0;
                     }
@@ -302,6 +302,32 @@ namespace Chiquimula.Data
                 resultado = query.ToList();
             }
             return resultado;
+        }
+
+        public List<ComentarioDto> GetComentariosSitios(int sitioId, int maximo = 30)
+        {
+            List<ComentarioDto> res = new List<ComentarioDto>();
+            using (var db = new TourEntities())
+            {
+                var query = from c in db.Comentario
+                            where c.sitioId == sitioId
+                            orderby c.fecha descending
+                            select c;
+                var lista = query.Take(maximo).ToList();
+                foreach(var dom in lista)
+                {
+                    var com = new ComentarioDto();
+                    com.deviceUniqueId = dom.deviceUniqueId;
+                    com.fecha = dom.fecha;
+                    com.Id = dom.Id;
+                    com.sitioId = dom.sitioId;
+                    com.Texto = dom.Texto;
+                    com.Usuario = dom.Usuario;
+
+                    res.Add(com);
+                }
+            }
+            return res;
         }
     }
 }

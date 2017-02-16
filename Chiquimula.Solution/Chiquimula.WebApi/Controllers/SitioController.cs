@@ -36,17 +36,5 @@ namespace Chiquimula.WebApi.Controllers
             return new TourService().Rankear(rankObject);
         }
         
-
-        // PUT: api/Sitio/5
-        public bool Put(int id, [FromBody]ComentarioDto comentario)
-        {
-            //Comentar
-            return new TourService().Comentar(comentario);
-        }
-
-        // DELETE: api/Sitio/5
-        public void Delete(int id)
-        {
-        }
     }
 }
