@@ -267,26 +267,68 @@ namespace Chiquimula.Data
             return true;
         }
 
-        public List<GeoSitioDto> GetSitiosCercanos(GeoSitioDto ubicacion)
+        public List<GeoSitioDto> GetSitiosCercanos(string deviceUniqueId, float latitud, float longitud, float distanciaKM)
         {
             List<GeoSitioDto> resultado = new List<GeoSitioDto>();
             using (var db = new TourEntities())
             {
-                var lista = db.GetSitiosMasCercanos(Convert.ToDouble(ubicacion.Latitud),
-                    Convert.ToDouble(ubicacion.Longitud),
-                    Convert.ToDouble(ubicacion.DistanciaKm)).ToList();
+                var lista = db.GetSitiosMasCercanos(Convert.ToDouble(latitud),
+                    Convert.ToDouble(longitud),
+                    Convert.ToDouble(distanciaKM)).ToList();
+
                 foreach(var dom in lista)
                 {
-                    resultado.Add(new GeoSitioDto()
+                    bool rankeadoYa = false;
+                    if (!string.IsNullOrWhiteSpace(deviceUniqueId))
                     {
-                        SitioId = dom.id,
-                        SitioNombre = dom.nombre,
-                        Latitud = dom.latitud,
-                        Longitud = dom.longitud,
-                        DistanciaKm = Convert.ToDecimal(dom.distanciaKm.Value)
-                    });
-                }
+                        rankeadoYa = (from r in db.SitioRanking
+                                      where r.deviceUniqueId == deviceUniqueId
+                                      && r.sitioId == dom.id
+                                      select r.id)
+                                      .Count() > 0;
+                    }
 
+                    var sitio = new GeoSitioDto()
+                    {
+                        id = dom.id,
+                        datos = dom.datos,
+                        descripcion = dom.descripcion,
+                        horario = dom.horario,
+                        imagenId = dom.imagenId,
+                        info = dom.info,
+                        latitud = dom.latitud,
+                        longitud = dom.longitud,
+                        masdatos = dom.masdatos,
+                        nombre = dom.nombre,
+                        precio = dom.precio,
+                        ranking = dom.ranking,
+                        titulo = dom.titulo,
+                        imagenes = new List<string>(),
+                        videos = new List<string>(),
+                        rankear = !rankeadoYa,
+                        DistanciaKm = Convert.ToDecimal(dom.distanciaKm.Value)
+                    };
+                    //obtener las imagenes URL y videos.
+
+                    var imagenes = (from i in db.Imagen
+                                    where i.sitioId == dom.id
+                                    select i).ToList();
+                    imagenes.ForEach(x =>
+                    {
+                        sitio.imagenes.Add(x.path);
+                    });
+
+                    var videos = (from i in db.Video
+                                  where i.sitioId == dom.id
+                                  select i).ToList();
+                    videos.ForEach(x =>
+                    {
+                        sitio.videos.Add(x.path);
+                    });
+
+                    resultado.Add(sitio);
+                    
+                }
             }
             return resultado;
         }

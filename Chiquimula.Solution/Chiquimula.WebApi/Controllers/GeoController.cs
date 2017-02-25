@@ -24,9 +24,9 @@ namespace Chiquimula.WebApi.Controllers
         }
 
         // POST: api/Geo
-        public List<GeoSitioDto> Post([FromBody]GeoSitioDto ubicacion)
+        public List<GeoSitioDto> Post([FromBody]GeoFiltroDto ubicacion)
         {
-            return new TourService().GetSitiosCercanos(ubicacion);
+            return new TourService().GetSitiosCercanos(ubicacion.DeviceId, ubicacion.Latitud, ubicacion.Longitud, ubicacion.RadioKm);
         }
 
         // PUT: api/Geo/5

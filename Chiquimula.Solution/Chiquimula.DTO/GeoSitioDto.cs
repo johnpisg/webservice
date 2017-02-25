@@ -5,12 +5,16 @@ using System.Text;
 
 namespace Chiquimula.DTO
 {
-    public class GeoSitioDto
+    public class GeoSitioDto : SitioDto
     {
-        public int SitioId { get; set; }
-        public string SitioNombre { get; set; }
-        public decimal Longitud { get; set; }
-        public decimal Latitud { get; set; }
         public decimal DistanciaKm { get; set; }
+    }
+
+    public class GeoFiltroDto
+    {
+        public float Latitud { get; set; }
+        public float Longitud { get; set; }
+        public float RadioKm { get; set; }
+        public string DeviceId { get; set; }
     }
 }
