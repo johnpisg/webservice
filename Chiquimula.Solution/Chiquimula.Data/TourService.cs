@@ -333,17 +333,25 @@ namespace Chiquimula.Data
             return resultado;
         }
 
-        public List<string> GetVideosUrlBySitioId(int sitioId)
+        public SitioVideosDto GetVideosUrlBySitioId(int sitioId)
         {
+            SitioVideosDto dto = new SitioVideosDto();
             List<string> resultado = new List<string>();
             using (var db = new TourEntities())
             {
+                var sitio = (from s in db.Sitio
+                             where s.id == sitioId
+                             select s).FirstOrDefault();
+                dto.SitioId = sitioId;
+                dto.SitioTitulo = sitio.titulo;
+
                 var query = from v in db.Video
                             where v.sitioId == sitioId
                             select v.path;
                 resultado = query.ToList();
+                dto.Videos = resultado;
             }
-            return resultado;
+            return dto;
         }
 
         public List<ComentarioDto> GetComentariosSitios(int sitioId, int maximo = 30)

@@ -1,4 +1,5 @@
 ﻿using Chiquimula.Data;
+using Chiquimula.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Chiquimula.WebApi.Controllers
         }
 
         // GET: api/Video/5
-        public List<string> Get(int id)
+        public SitioVideosDto Get(int id)
         {
             return new TourService().GetVideosUrlBySitioId(id);
         }

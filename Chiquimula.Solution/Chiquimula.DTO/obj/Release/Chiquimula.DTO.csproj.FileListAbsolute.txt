@@ -2,7 +2,6 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Rele
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\Chiquimula.DTO.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Release\Chiquimula.DTO.dll
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Release\Chiquimula.DTO.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\Chiquimula.DTO\obj\Release\Chiquimula.DTO.csprojResolveAssemblyReference.cache
 C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\Chiquimula.DTO.dll
 C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\Chiquimula.DTO.pdb
 C:\SourceCode\Mio\tour\webservice\webservice\Chiquimula.Solution\Chiquimula.DTO\bin\Release\System.Net.Http.dll
