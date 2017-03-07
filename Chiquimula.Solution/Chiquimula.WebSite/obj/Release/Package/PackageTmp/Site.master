@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" CodeBehind="Site.master.cs" Inherits="Chiquimula.WebSite.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>City - Tour, Chiquimula</title>
+    
+    <link href="~/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    
+    <script src='<%# ResolveUrl("~/Scripts/jquery-3.1.1.js") %>'></script>
+    <script src='<%# ResolveUrl("~/Scripts/jquery-ui-1.8.20.js") %>'></script>
+    <script src='<%# ResolveUrl("~/Scripts/bootstrap.min.js") %>'></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <h2 class="titulo-azul">Chiquimula - Sitio Web de Administración.</h2>
+    <form id="form1" runat="server">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 text-left">
+                <a class="btn btn-info" runat="server" href="~/">
+                    <span class="fa fa-home"></span>
+                    Volver a Inicio
+                </a>
+            </div>
+            <div class="col-xs-6 text-right">
+                <asp:LinkButton CssClass="btn btn-warning" runat="server" ID="LnkLogout" 
+                    OnClick="LnkLogout_Click">
+                    <span class="fa fa-sign-out"></span>Salir
+                </asp:LinkButton>
+            </div>
+        </div>        
+    </div>
+    <h2 class="DDMainHeader"></h2>
+
+    <div class="container-fluid">
+        <%-- TODO: Enable partial rendering by setting the EnablePartialRendering attribute to "true" to provide a smoother browsing experience.
+             Leaving partial rendering disabled will provide a better debugging experience while the application is in development. --%>
+
+        <asp:ScriptManager runat="server" EnablePartialRendering="false" />
+        <div class="row">
+            <div class="col-xs-12">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        
+        
+    </div>
+    </form>
+</body>
+</html>
+
