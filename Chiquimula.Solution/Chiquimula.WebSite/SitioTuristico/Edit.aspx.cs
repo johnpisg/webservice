@@ -177,7 +177,7 @@ namespace Chiquimula.WebSite.SitioTuristico
                 {
                     string FileName = Path.GetFileName(UploadImage.PostedFile.FileName);
                     //Save files to disk
-                    var url = "~/Images/" + FileName;
+                    var url = "~/Images/" + DateTime.Now.Ticks + "_" + FileName;
                     UploadImage.SaveAs(Server.MapPath(url));
                     return url;
                 }
