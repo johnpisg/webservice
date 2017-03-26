@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>City - Tour, Chiquimula</title>
+    <title>City - Tour, Chiquimula v1.0</title>
     
     <link href="~/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/bootstrap.min.css" rel="stylesheet" />

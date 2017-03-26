@@ -223,11 +223,18 @@ namespace Chiquimula.Data
                     var usersActual = sitio.rankingUsers + 1;
                     var rankDado = dto.Rank;
 
-                    float newRank = Convert.ToSingle((rankActual * (usersActual - 1) + rankDado) / usersActual);
-                    dto.RankingActual = newRank;
+                    var querySumaRankings = (from r in db.SitioRanking
+                                        where r.sitioId == dto.SitioId
+                                        select r.ranking);
 
+                    var sumaActual = querySumaRankings.Sum();
+                    var cantidadActual = querySumaRankings.Count();
+
+                    //float newRank = Convert.ToSingle((rankActual * (usersActual - 1) + rankDado) / usersActual);
+                    float newRank = (sumaActual + rankDado) / (cantidadActual + 1);
+                    dto.RankingActual = newRank;
                     sitio.ranking = newRank;
-                    sitio.rankingUsers = usersActual;
+                    sitio.rankingUsers = cantidadActual + 1;
 
                     db.Entry(sitio).State = System.Data.EntityState.Modified;
                     db.SaveChanges();
@@ -235,7 +242,7 @@ namespace Chiquimula.Data
                     //SitioRanking
                     SitioRanking ranking = new SitioRanking();
                     ranking.deviceUniqueId = dto.DeviceId;
-                    ranking.ranking = dto.Rank;
+                    ranking.ranking = rankDado;
                     ranking.sitioId = sitio.id;
 
                     db.SitioRanking.Add(ranking);
