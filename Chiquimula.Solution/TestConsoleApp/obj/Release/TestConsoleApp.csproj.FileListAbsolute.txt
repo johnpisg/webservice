@@ -19,6 +19,5 @@ D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Rele
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.Data.pdb
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\EntityFramework.xml
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\bin\Release\Chiquimula.DTO.pdb
-D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.csprojResolveAssemblyReference.cache
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.exe
 D:\ChiquimulaWebSite\repo\webservice\Chiquimula.Solution\TestConsoleApp\obj\Release\TestConsoleApp.pdb

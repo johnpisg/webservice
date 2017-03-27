@@ -227,8 +227,12 @@ namespace Chiquimula.Data
                                         where r.sitioId == dto.SitioId
                                         select r.ranking);
 
-                    var sumaActual = querySumaRankings.Sum();
                     var cantidadActual = querySumaRankings.Count();
+                    var sumaActual = 0;
+                    if(cantidadActual > 0)
+                    {
+                        sumaActual = querySumaRankings.Sum();
+                    }                    
 
                     //float newRank = Convert.ToSingle((rankActual * (usersActual - 1) + rankDado) / usersActual);
                     float newRank = (sumaActual + rankDado) / (cantidadActual + 1);
